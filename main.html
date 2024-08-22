@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-image: url('https://www.hindustantimes.com/ht-img/img/2023/04/16/550x309/animal-g41e1ebdb6_1920_1681619532018_1681619588617_1681619588617.jpg');
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 500px;
+        font-family: Arial;
+      }
+      .name, phone, address, checkbox, multiSelect, submit {
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid black;
+        color: red;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <form>
+		 <label for="name">Name </label>
+		 <input type="text" id="name" placeholder="Name"><br>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+		 <label for="phone">Phone Numer </label>
+		 <input type="text" id="phone" placeholder="Phone Number"><br>
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+		 <label for="address">Address </label>
+		 <input type="text" id="address" placeholder="Address"><br>
+		 
+		 <label for="checkbox">Have you ever lived with a Dog before? </label>
+		 <input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before?"><br>
+		 
+		 <select id="multiSelect">
+		   <option value="">Please select your preferred breeds</option> 
+		   <option value="German">German</option>
+		   <option value="Rottler">Rottler</option>
+		   <option value="PitBull">PitBull</option>
+		 </select><br>
+		 
+		 <button type="submit">Submit</button>
+	</form>
+  </body>
 </html>
